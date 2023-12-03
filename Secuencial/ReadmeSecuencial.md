@@ -9,3 +9,5 @@ Instrucciones para compilar el metodo secuencial
 ./secuencial <ruta_de_la_imagen_a_color> <ruta_para_guardar_imagen_en_gris>, con la imagen que tenemos Mondongo.jpg quedaria asi y en la ruta para guardar se colocar el nombre que uno quiera para la nueva imagen con escala de grises:
 
 ./secuencial Mondongo.jpg MondongoGris.jpg
+
+La imagen tiene que estar en el directorio Secuencial.
