@@ -13,3 +13,5 @@ El codigo establece como obligatorio el numero de hebras como parametro.
 Ejemplo con la imagen Mondongo.jpg:
 
 ./openmp Mondongo.jpg MondongoGris.jpg 4
+
+La imagen tiene que estar cargada en el directorio Openmp.
