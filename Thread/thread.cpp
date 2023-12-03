@@ -20,8 +20,8 @@ void convertToGraySection(const Mat& colorImage, Mat& grayImage, int startRow, i
 }
 
 int main(int argc, char** argv) {
-    if (argc != 3) {
-        cout << "Usage: ./paralelo <input_color_image> <output_gray_image>" << endl;
+    if (argc != 4) {
+        cout << "Usage: ./paralelo <input_color_image> <output_gray_image> <num_threads>" << endl;
         return -1;
     }
 
@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    int numThreads = thread::hardware_concurrency(); // Obtener el número de hilos soportados
+    int numThreads = atoi(argv[3]); // Obtener el número de hebras desde los argumentos
 
     // Dividir la imagen en secciones para asignar a cada hilo
     vector<thread> threads;
